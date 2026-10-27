@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etkinlikler - Kampüs Kulübü</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Bartın Üniversitesi Yazılım ve Oyun Topluluğu</h1>
+    <nav>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="etkinlikler.html" class="active">Etkinlikler</a>
+      <a href="hakkimizda.html">Hakkımızda</a>
+    </nav>
+  </header>
+  <main>
+    <section class="search-box" aria-label="Etkinlik arama">
+      <label for="event-search"><strong>Etkinlik başlığına göre ara</strong></label>
+      <div class="search-controls">
+        <input id="event-search" type="search" placeholder="Örnek: HTML, Atölye, Turnuva" autocomplete="off">
+        <button id="clear-search" type="button" class="btn-clear">Temizle</button>
+      </div>
+      <p id="result-count" class="counter" role="status" aria-live="polite">5 etkinlik gösteriliyor.</p>
+    </section>
+
+    <p id="empty-message" class="no-results" hidden>Aramanıza uygun etkinlik bulunamadı.</p>
+
+    <section id="event-list" class="events-grid" aria-label="Örnek etkinlikler">
+      <article class="event-card">
+        <p class="event-meta">12 KASIM / 14.00</p>
+        <h2>HTML Atölyesi</h2>
+        <p>Başlık, paragraf ve linklerle ilk web sayfanı oluştur.</p>
+        <p class="event-meta">Yer: Bilgisayar Laboratuvarı-1</p>
+      </article>
+      <article class="event-card">
+        <p class="event-meta">19 KASIM / 14.00</p>
+        <h2>CSS Tasarım Saati</h2>
+        <p>Renkleri, boşlukları ve mobil uyumlu sayfa düzenini keşfet.</p>
+        <p class="event-meta">Yer: Bilgisayar Laboratuvarı-1</p>
+      </article>
+      <article class="event-card">
+        <p class="event-meta">26 KASIM / 14.00</p>
+        <h2>Copilot ile Kod Okuma</h2>
+        <p>Kodunu açıklat, küçük bir değişiklik yap ve sonucu dene.</p>
+        <p class="event-meta">Yer: Çevrim İçi Buluşma</p>
+      </article>
+      <article class="event-card">
+        <p class="event-meta">3 ARALIK / 14.00</p>
+        <h2>GitHub Atölyesi</h2>
+        <p>Repository, commit ve push işlemlerini birlikte deneyelim.</p>
+        <p class="event-meta">Yer: Bilgisayar Laboratuvarı-2</p>
+      </article>
+      <article class="event-card">
+        <p class="event-meta">10 ARALIK / 16.00</p>
+        <h2>Kampüs E-Spor ve Oyun Turnuvası</h2>
+        <p>Ödüllü turnuva heyecanı için tüm üniversite öğrencilerini bekliyoruz.</p>
+        <p class="event-meta">Yer: Öğrenci Yaşam Merkezi</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
